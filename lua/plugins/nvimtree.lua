@@ -7,7 +7,7 @@ return {
 	},
 	config = function()
 		require("nvim-tree").setup({})
-		keymap = vim.keymap
+		local keymap = vim.keymap
 		keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
