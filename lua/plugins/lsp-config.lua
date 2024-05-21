@@ -26,6 +26,9 @@ return {
 			vim.keymap.set("n", "<leader>d", function()
 				vim.diagnostic.open_float(0, { scope = "line" })
 			end, {})
+			vim.keymap.set("n", "<leader>lr", function()
+				vim.cmd("LspRestart")
+			end)
 		end,
 	},
 }
