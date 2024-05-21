@@ -22,6 +22,7 @@ return {
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+            vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, {})
 			vim.keymap.set("n", "<leader>d", function()
 				vim.diagnostic.open_float(0, { scope = "line" })
 			end, {})
